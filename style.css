@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.menu-bar {
+  background: green;
+  text-align: center;
+}
+
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.menu-bar ul li {
+  width: 120px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.active,
+.menu-bar ul li:hover {
+  background: rgba(1, 150, 1, 0.712);
+  border-radius: 3px;
+  transition: 1s;
+}
+
+.sub-menu-1 {
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background: rgba(3, 199, 3, 0.644);
+  margin-top: 15px;
+  margin-left: -15px;
+}
